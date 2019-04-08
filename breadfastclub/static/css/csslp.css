@@ -1,0 +1,234 @@
+
+/* Navbar*/
+nav.navbar-default.navbar {
+    background: #F1876F;
+    color: white;
+    font-family: 'PT Sans', sans-serif, 14px;
+}
+
+.nav navbar-nav {
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.navbar-brand{
+    padding-top:6px;
+}
+
+#logoNav{
+    position: relative;
+    height:40px;
+    width: 40px;
+    float: right;
+    padding: 0px 0px 0px;
+    margin: 0px 0px 0px;
+}
+
+/*Footer*/
+footer.navbar-default.navbar-fluid-bottom {
+    background: #F1876F;
+    color: white;
+    padding: 2em 0;
+    font-family: 'PT Sans', sans-serif, 14px;
+}
+
+footer.navbar-default.navbar-fluid-bottom p {
+    margin: 0;
+}
+
+
+body {
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+
+.pageslp{
+background-color: #FFE3BB;      
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.text{
+  padding-top: 0%;
+  text-align: center;
+  color: darkgray;
+  }
+
+  .whitetext{
+        padding-top: 0%;
+        text-align: left;
+        color: white; 
+        margin-left: 10%;
+        
+  }
+
+  @media only screen and (max-width: 992px) {
+    .whitetext{
+        padding-top: 0%;
+        text-align: left;
+        color: white; 
+        
+        margin-left: 9%;
+  }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .whitetext{
+            padding-top: 0%;
+            text-align: left;
+            color: white; 
+            margin-left: 4%;
+      }
+        }
+
+
+#home {
+background-image: url("../img/landing_page.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.homeText{
+  padding-top: 25%;
+  padding-bottom: 25%;
+  text-align: center;
+  }
+
+
+#howTo{
+  padding-bottom: 10%;
+}
+
+.howToText{
+  padding-top:0%; 
+}
+
+#imagefamily {
+    height: 50%;
+    right:0;
+    position:absolute;
+}
+
+
+
+   /* CSS Styling for Categories (How does it work Page) >>Adopted to our needs. 
+  @import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"
+  @import "//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css";
+  */
+
+  .box > .icon { 
+      text-align: center; 
+      position: relative; 
+      margin-top: 10%;
+    }
+
+  .box > .icon > .image { 
+      position: relative; 
+      z-index: 2; 
+      margin: auto; 
+      width: 88px; 
+      height: 88px; 
+      line-height: 88px; 
+      vertical-align: middle; 
+    }
+
+  .box > .icon > .info { 
+      margin-top: -60px;
+      margin:: 0 10% 0% 10%;
+      background:white; 
+      border: 1px solid #e0e0e0; 
+      padding: 90px 0 10px 0; 
+    }
+
+  .box > .icon > .info > h3.title { 
+      font-family: sans-serif !important; 
+      font-size: 16px; 
+      color: #222; 
+      font-weight: 500; 
+    }
+
+  .box > .icon > .info > p { 
+      font-family: sans-serif !important; 
+      font-size: 13px; 
+      color: #666; 
+      line-height: 1.5em; 
+      margin: 20px;
+    }
+
+      /* CSS Styling for Categories (How does it work Page >>End here
+      @import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"
+      @import "//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css";
+      */
+
+.redtext{
+    color: #F1876F;
+    padding-top: 0%;
+    text-align: left;    
+    margin-left: 10%;
+}
+
+.gradientbackground{
+    background: linear-gradient(to bottom, #FFE3BB, white);
+}
+
+  .pbackground{
+    background-color: #F1876F;
+    background-position: ;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media only screen and (min-width: 992px) {
+    #p1{
+        height: 480px;
+    }
+    #p2{
+        height: 400px;
+    }
+
+    #p3{
+        height: 360px;
+    }
+
+    #p4{
+        height: 445px;
+    }
+
+    .textproductcat{
+        background: linear-gradient(to right, #A8DBF0, transparent);
+        position: relative; 
+        left: -5%;
+        padding: 5% 0% 5% 0%;
+        text-align: left;
+        color: white; 
+    }
+
+  .categorytitle{
+      padding-top: 20%;
+      z-index: 5;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .textproductcat{
+        background: linear-gradient(to right, #A8DBF0, transparent);
+        padding: 5% 0% 5% 0%;
+        text-align: left;
+        color: white; 
+        }
+  }
+
+#partners{
+padding-bottom: 3%;
+}
+
+/*Map*/
+#map {
+ height: 400px; 
+}

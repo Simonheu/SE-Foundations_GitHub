@@ -1,0 +1,259 @@
+/* Top Navigation Bar */
+nav.navbar-default.navbar {
+    background: #F1876F;
+    color: white;
+    font-family: 'PT Sans', sans-serif, 14px;
+}
+
+.nav navbar-nav {
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.navbar-brand{
+    padding-top:6px;
+}
+
+#logoNav{
+    position: relative;
+    height:40px;
+    width: 40px;
+    float: right;
+    padding: 0px 0px 0px;
+    margin: 0px 0px 0px;
+}
+
+/* Footer Navbar*/
+footer.navbar-default.navbar-fluid-bottom {
+    background: #F1876F;
+    color: white;
+    padding: 2em 0;
+    font-family: 'PT Sans', sans-serif, 14px;
+}
+
+footer.navbar-default.navbar-fluid-bottom p {
+    margin: 0;
+}
+
+/*Productcategory Side - Navbar */
+.productnavbar{
+    list-style: none; 
+    background-color: white;
+    height: 400px;
+    width: 100px;
+    left: 30px;
+    position: fixed;
+   top: 100px;
+   float: left;
+   display: flex;  
+   flex-flow: column;
+   border: 1px solid darkgrey;
+   box-shadow: 0 0 4px 0.1px rgba(107, 107, 107, 0.3);
+   z-index: 50;
+   color: #F1876F;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .productnavbar{
+        list-style: none; 
+        background-color: white;
+        height: 100px;
+        width: 400px;
+        box-align: center;
+        position: fixed;
+       top: 50px;
+       float: left;
+       display: flex;  
+       flex-flow: row;
+       border: 1px solid darkgrey;
+       box-shadow: 0 0 4px 0.1px rgba(107, 107, 107, 0.3);
+       z-index: 50;
+       color: #F1876F;
+    }
+
+    .productnavbar .item .inset {
+        height: 100px;
+        border-right: 1px solid #F1876F;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productnavbar .item .inset {
+        height: 100px;
+        border-right: 1px solid #F1876F;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .productnavbar .item:last-child .inset {
+        border-right: 0;
+    }
+
+}
+
+
+.productnavbar .item .inset {
+    height: 100px;
+    border-bottom: 1px solid #F1876F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productnavbar .item:last-child .inset {
+    border-bottom: 0;
+}
+
+.productnavbar .item .inset .name {
+    text-align: center;
+    margin-top: -30px;
+}
+
+
+.productnavbar .item:not(.active):hover {
+    background: #F1876F;
+    color: white;
+}
+
+.productnavbar .items{
+    color: white;
+    list-style: none; 
+    padding: 0;
+    margin: 10px;
+    height: 100px;
+    text-align: center;
+}
+
+.img {
+    height: 96px; 
+    width: 96px; 
+    z-index: 3;
+    background-repeat: no-repeat;
+    background-image: url(../img/icons-bread.png);
+}
+
+.img.a{
+    background-position: 0px -10px; 
+}
+
+.img.a:hover{
+background-position: 0px -106px;
+}
+
+.img.b{
+    background-position: -96px -10px; 
+}
+
+.img.b:hover{
+background-position: -96px -106px;
+}
+
+.img.c{
+    background-position: -192px -10px; 
+}
+
+.img.c:hover{
+background-position: -192px -106px;
+}
+
+.img.d{
+    background-position: -288px -10px; 
+}
+
+.img.d:hover{
+background-position: -288px -106px;
+}
+
+
+/*Page Items*/
+.container {
+    margin-left: 15%;
+    width: 70%;
+    border-top-right-radius:40px
+    }
+
+
+.content > .text {
+    padding: 1%;
+    text-align: left;
+    color: white;
+}
+
+.box{
+    margin:0 !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .box{
+    margin-left: 10%;
+    padding-left: 15%;
+    padding-bottom: 15%;
+    }
+}
+
+.box > .icon {
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.productcategoryimage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 160%;
+    position: relative;
+    left: -30%;
+    bottom: -10%;
+}
+
+.productcategory{
+    padding-right: 0;
+    padding-left: 0; 
+}
+
+
+@media only screen and (max-width: 768px) {
+    .productcategory {
+        padding-top: 100px;
+        }
+}
+
+.backgroundgradient{
+background: linear-gradient(to bottom, white, #FEE2BD);
+padding-bottom: 5%;
+}
+
+.textgradient {
+background: linear-gradient(to right, #A8DBF0, #F1876F);
+margin-left: 15%;
+width: 70%;
+border-top-right-radius:40px
+}
+
+@media only screen and (max-width: 768px) {
+    .textgradient {
+    background: linear-gradient(to right, #A8DBF0, #F1876F);
+    margin-left: 30px;
+    width: 90%;
+    border-top-right-radius:40px
+    }
+}
+
+
+
+
+
+
+
+
+
+
