@@ -1,0 +1,6 @@
+Joshua: 4
+Mark: 10
+Anna: 5
+Jose: 8
+Jessica: 6
+Winfrey: 10
