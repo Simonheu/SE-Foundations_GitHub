@@ -1,57 +1,79 @@
 <!DOCTYPE <html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Personal Website</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="stylesheet.css">
-        <!-- NavLogo <div>Icons made by <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
-    </head>
 
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Personal Website</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- NavLogo <div>Icons made by <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+</head>
 
-       <nav id="nav">
-           <div class="NavElements">
-               <a href="#">
-                   <img id="logo"src="static/img/creativity.svg">
-               </a>
-           </div>
-           <div class="NavElements">
-                <div>
-                    <span onclick="openNav()">&#9776; </span>
-                </div>
-                <div id="myNav" class="overlay">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <div class="overlay-content">
-                        <a href="#">Projects</a>
-                        <a href="#">My Story</a>
-                        <a href="#">Journal</a>
-                        <a href="#">Contact</a>
+<body>
+
+    <nav id="nav">
+        <div class="NavElements" style="background-color: yellow;">
+            <a href="#">
+                <!-- <img id="logo"src="static/img/creativity.svg"> -->
+            </a>
+        </div>
+        <div class="NavElements" style="background-color: aqua;">
+            <!-- Menu Burger Animation adopted from FreeCodeCamp: https://www.w3schools.com/howto/howto_css_menu_icon.asp -->
+                <span onclick="togglenav()">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+                    <div class="container" onclick="menuAnimation(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
                     </div>
+                </span>
+            <div id="myNav" class="overlay">
+                <div class="overlay-content">
+                    <a href="#">Projects</a>
+                    <a href="#">My Story</a>
+                    <a href="#">Journal</a>
+                    <a href="#">Contact</a>
                 </div>
-            </div> 
-        
-       </nav>
-        
-<!-- Script Navbar Adopted from FreeCodeCamp: https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp-->
-       <script>
-            function openNav() {
-              document.getElementById("myNav").style.height = "100%";
+            </div>
+        </div>
+        <div class="NavElements" style="background-color: burlywood;">
+            <a>
+                <img src="static/img/creativity.svg" id="NavLogo">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Javascript Functions -->
+    <script>
+        // Menu Burger Animation adopted from FreeCodeCamp: https://www.w3schools.com/howto/howto_css_menu_icon.asp
+        function menuAnimation(x) {
+            x.classList.toggle("change");
+        }
+
+        function togglenav(){
+            if (document.getElementById("myNav").style.height == "100%"){
+                closeNav();
+            } else{
+                openNav();
             }
+        }
+        //Overlay Navbar Adopted from FreeCodeCamp: https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
+        function openNav() {
             
-            function closeNav() {
-              document.getElementById("myNav").style.height = "0%";
-            }
-        </script>
+            document.getElementById("myNav").style.height = "100%";
+        }
 
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
 
-    </body>
+</body>
 
-    <footer>
-        <!-- Links used -->
-           
+<footer>
+    <!-- Links used -->
+</footer>
+
 </html>
-
-
