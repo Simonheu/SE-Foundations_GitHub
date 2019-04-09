@@ -7,6 +7,7 @@ body {
   /* mobile navigation bar */
   #nav {
     display: flex;
+    flex-direction: row;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -15,6 +16,7 @@ body {
   }
 
   .NavElements {
+    display: flex;
     font-size: 40px;
     text-align: center;
     height: 50px;
@@ -135,7 +137,8 @@ body {
 /* Desktop Navbar */
 @media(min-width: 640px) {
   #nav {
-    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
     width: 103px;
     height: 204px;
     left: 64px;
@@ -143,7 +146,8 @@ body {
   }
 
   .NavElements {
-    background-color: #545454;
+    display: flex;
+    background-color: #ce7d7d;
     height: 100px;
     width: 100px;
 
@@ -163,12 +167,12 @@ body {
   /* The Overlay (background) */
   .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */
-    height: 0%;
-    width: 100%;
+    height: 100%;
+    width: 0%;
     position: fixed;
     z-index: 1;
-    bottom: 50px;
-    /*Slides from bottom to top*/
+    top: 0;
+    /*slides from left to right*/
     left: 0;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.9);

@@ -53,7 +53,7 @@
         }
 
         function togglenav(){
-            if (document.getElementById("myNav").style.height == "100%"){
+            if (document.getElementById("myNav").style.height == "100%" || document.getElementById("myNav").style.width == "100%"){
                 closeNav();
             } else{
                 openNav();
@@ -61,12 +61,22 @@
         }
         //Overlay Navbar Adopted from FreeCodeCamp: https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
         function openNav() {
-            
-            document.getElementById("myNav").style.height = "100%";
+            var w = window.outerWidth;
+            if (w < 439){
+                document.getElementById("myNav").style.height = "100%";
+            }else{
+                document.getElementById("myNav").style.width = "100%";
+            }
         }
 
         function closeNav() {
-            document.getElementById("myNav").style.height = "0%";
+            var w = window.outerWidth;
+            if (w > 439){
+                document.getElementById("myNav").style.height = "0%";
+            }else{
+                document.getElementById("myNav").style.width = "0%";
+            }
+            
         }
     </script>
 
