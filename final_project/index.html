@@ -7,19 +7,20 @@
     <title>Personal Website</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="static/stylesheet.css">
+    <script src="static/myscripts.js"></script>
     <!-- NavLogo <div>Icons made by <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 </head>
 
 <body>
 
     <nav id="nav">
-        <div class="NavElements" style="background-color: yellow;">
+        <div class="NavElements">
             <a href="#">
                 <!-- <img id="logo"src="static/img/creativity.svg"> -->
             </a>
         </div>
-        <div class="NavElements" style="background-color: aqua;">
+        <div class="NavElements">
             <!-- Menu Burger Animation adopted from FreeCodeCamp: https://www.w3schools.com/howto/howto_css_menu_icon.asp -->
                 <span onclick="togglenav(document.getElementsByClassName('overlay')[0])">
                     <div class="container" onclick="menuAnimation(this)">
@@ -34,27 +35,16 @@
                     <a href="#">My Story</a>
                     <a href="#">Journal</a>
                     <a href="#">Contact</a>
+
                 </div>
             </div>
         </div>
-        <div class="NavElements" style="background-color: burlywood;">
+        <div class="NavElements">
             <a>
                 <img src="static/img/creativity.svg" id="NavLogo">
             </a>
         </div>
     </nav>
-
-    <!-- Javascript Functions -->
-    <script>
-        // Menu Burger Animation adopted from FreeCodeCamp: https://www.w3schools.com/howto/howto_css_menu_icon.asp
-        function menuAnimation(x) {
-            x.classList.toggle("change");
-        }
-
-        function togglenav(x){
-            x.classList.toggle("open");
-        }
-    </script>
 
 </body>
 

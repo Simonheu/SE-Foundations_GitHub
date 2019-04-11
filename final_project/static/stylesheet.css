@@ -24,15 +24,12 @@ body {
   #NavLogo {
     height: 35px;
     margin-top: 7.5px;
-
+    
   }
 
   /* Burger Menu */
   /* Adopted from FreeCodeCamp: https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
   
-
-
-
   /* The Overlay (background) */
   .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */
@@ -43,8 +40,7 @@ body {
     bottom: 50px;
     /*Slides from bottom to top*/
     left: 0;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #545454;
     overflow-y: hidden;
     transition: 0.5s;
   }
@@ -52,17 +48,18 @@ body {
   /* Position the content inside the overlay */
   .overlay-content {
     position: relative;
-    top: 35%;
+    top: 25%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
+    vertical-align: middle !important;
   }
 
   /* The navigation links inside the overlay */
   .overlay a {
-    padding: 8px;
+    padding: 20px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 50px;
     color: #C3BFBF;
     display: block;
     transition: 0.3s;
@@ -72,14 +69,6 @@ body {
   .overlay a:hover,
   .overlay a:focus {
     color: #f1f1f1;
-  }
-
-  /* Position the close button (top right corner) */
-  .overlay .closebtn {
-    position: absolute;
-    top: 20%;
-    right: 45px;
-    font-size: 60px;
   }
 
   @media screen and (max-height: 450px) {
@@ -110,7 +99,7 @@ body {
   .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: #C3BFBF;
     margin: 6px 0;
     transition: 0.4s;
   }
@@ -133,13 +122,11 @@ body {
   }
 }
 
-
-
 /* Desktop Navbar */
 @media(min-width: 640px) {
   #nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     position: absolute;
     width: 103px;
     height: 300px;
@@ -160,8 +147,6 @@ body {
     margin-left: 18px;
   }
 
-
-
   /* Burger Menu */
   /* Adopted from FreeCodeCamp: https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp*/
 
@@ -175,8 +160,7 @@ body {
     left: 163px;
     /*Slides from bottom to top*/
     top: 0;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #545454;
     overflow-y: hidden;
     transition: 0.5s;
   }
@@ -184,7 +168,7 @@ body {
   /* Position the content inside the overlay */
   .overlay-content {
     position: relative;
-    top: 35%;
+    top: 15%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -192,9 +176,9 @@ body {
 
   /* The navigation links inside the overlay */
   .overlay a {
-    padding: 8px;
+    padding: 30px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 60px;
     color: #C3BFBF;
     display: block;
     transition: 0.3s;
@@ -204,14 +188,6 @@ body {
   .overlay a:hover,
   .overlay a:focus {
     color: #f1f1f1;
-  }
-
-  /* Position the close button (top right corner) */
-  .overlay .closebtn {
-    position: absolute;
-    top: 20%;
-    right: 45px;
-    font-size: 60px;
   }
 
   @media screen and (max-height: 450px) {
@@ -245,7 +221,7 @@ body {
   .bar3 {
     width: 7px;
     height: 35px;
-    background-color: #333;
+    background-color:#C3BFBF;
     margin-top: 20px;
     transition: 0.4s;
   }
@@ -267,7 +243,6 @@ body {
     transform: rotate(45deg) translate(-8px, -8px);
   }
 }
-
 
 .overlay.open {
   width: 100%;

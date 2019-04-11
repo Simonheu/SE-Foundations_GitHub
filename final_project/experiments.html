@@ -18,13 +18,132 @@
   margin:0 auto;
   width: 25%;
   height: 50px;
+}
+
+.article-title {
+  margin:20px;
+  width:50%;
+  text-align: center;
+}
+
+</style>
+<!DOCTYPE <html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Personal Website</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/stylesheet.css">
+    <script src="static/myscripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- NavLogo <div>Icons made by <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+</head>
+
+<script>
+  function hideContainer(name) {
+    $('.main').hide();
+  }
+
+  function showArticle() {
+    $('#article-details').show();
+  }
+
+
+  function setArticleData(title, description) {
+    $('#article-details h1').html(title);
+    $('#article-details p').html(description);
+  }
+
+
+// "Database" here we store the text to the corresponding headline
+  $(document).ready(function () {
+    var articlesDB = {
+      '1': 'Test',
+      '2': '',
+      '3': 'Article 3 description'
+    };
+
+    // Eventlistener, when clicked its hied the articles, and gets the data id 
+    $('.article-title').on('click', function() {
+      $('#articles').hide();
+      $articleId = $(this).attr("data-id");
+      
+      var title = $(this).html(); //stores the title that was clicked on. 
+      var description = articlesDB[$articleId]; // gets the description from the array
+      setArticleData(title, description); 
+
+      showArticle();
+
+    });
+
+  });
+
+
+</script>
+
+
+<button onclick="hideContainer()">Test our JS</button>
+<button onclick="showContainer()">Show Block</button>
+
+<body>
+
+  <div id="red-block" style="background-color: red; display: none; ">Test Block</div>
+
+    <nav id="nav">
+        <div class="NavElements">
+            <a href="#">
+                <!-- <img id="logo"src="static/img/creativity.svg"> -->
+            </a>
+        </div>
+        <div class="NavElements">
+            <!-- Menu Burger Animation adopted from FreeCodeCamp: https://www.w3schools.com/howto/howto_css_menu_icon.asp -->
+                <span onclick="togglenav(document.getElementsByClassName('overlay')[0])">
+                    <div class="container" onclick="menuAnimation(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </span>
+            <div id="myNav" class="overlay">
+                <div class="overlay-content">
+                    <a href="#">Projects</a>
+                    <a href="#">My Story</a>
+                    <a href="#">Journal</a>
+                    <a href="#">Contact</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="NavElements">
+            <a>
+                <img src="static/img/creativity.svg" id="NavLogo">
+            </a>
+        </div>
+    </nav>
+
+</body>
+
+<footer>
+    <!-- Links used -->
+</footer>
+
+</html>
   background-color: brown;
 }
 </style>
 
-<div class="main">
-  <div class="test1">a</div>
-  <div class="test2">b</div>
-  <div class="test1">c</div>
-  <div class="test2">d</div>
+<div id="articles">
+  <div class="article-title" data-id="1">My first Article</div>
+  <div class="article-title" data-id="2" content="This article is about ...">My second Article</div>
+  <div class="article-title" data-id="3">My last Article</div>
+</div>
+
+
+<div id="article-details" style="display: none;">
+  <h1>Title</h1>
+  <p>Description</p>
 </div>
