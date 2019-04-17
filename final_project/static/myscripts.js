@@ -8,3 +8,9 @@ function menuAnimation(x) {
 function togglenav(x){
     x.classList.toggle("open");
 }
+
+// ColorChange of the Navbar
+function colorChange(x){
+    x.classList.toggle("open");
+}
+

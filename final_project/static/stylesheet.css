@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  height: 100%;
 }
 
 @media(max-width: 639px) {
@@ -126,8 +127,8 @@ body {
 @media(min-width: 640px) {
   #nav {
     display: flex;
+    position: fixed;
     flex-direction: column-reverse;
-    position: absolute;
     width: 103px;
     height: 300px;
     left: 64px;
@@ -181,7 +182,7 @@ body {
     font-size: 60px;
     color: #C3BFBF;
     display: block;
-    transition: 0.3s;
+    transition: 0.5s;
   }
 
   /* When you mouse over the navigation links, change their color */
@@ -244,7 +245,148 @@ body {
   }
 }
 
+ /* Nav Menu Animation */
 .overlay.open {
   width: 100%;
   height: 100%;
 }
+
+.NavElements.open{
+  background-color: white;
+}
+
+section {
+  background-color: goldenrod;
+  height: 100%;
+}
+
+#section_1{
+  background-color: antiquewhite
+}
+
+/* Centering a div horizontically */
+.quotes{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-bottom: 50px;
+}
+
+
+#section_2 >div >div >img{
+  height: 300px;
+  display: block;
+  margin: auto;
+}
+
+#section_3{
+  background-color: white;
+}
+
+#section_4 > button{
+  background-color: bisque
+}
+
+#section_5{
+  background-color: greenyellow;
+}
+
+#section_5{
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 150px 300px 75px;
+  grid-gap: 25px;
+}
+
+#section_5> div{
+  background-color: aqua;
+  padding: 25px;
+}
+
+.section_5> div:last-of-type{
+  grid-column: 1/2;
+}
+
+#projects_young{
+  height: 600px;
+  width: 300px;
+  background-color: brown;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#projects_young>img{
+  height: 200px;
+}
+
+#close{
+  width:50px;
+  display: relative;
+}
+
+
+#imghobby{
+  width: 150px;
+}
+
+#section_7 > div{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100%;
+}
+  #section_7 > div >div{
+    flex: 0 0 auto;
+    width: 100%;
+    height:100%;
+    text-align: center;
+  }
+
+  .interets{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 25px;
+  }
+
+  .interets >div{
+    background-color: aqua;
+    padding: 30px;
+}
+
+#section_11{
+  height: 50%;
+}
+
+/* Accordion CODE University */
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  #section_15{
+    height: 50%;
+    background-color: aqua;
+  }
