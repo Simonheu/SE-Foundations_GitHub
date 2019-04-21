@@ -7,6 +7,7 @@ body {
 
   /* mobile navigation bar */
   #nav {
+    z-index: 10;
     display: flex;
     position: fixed;
     bottom: 0;
@@ -256,25 +257,40 @@ body {
 }
 
 section {
-  background-color: goldenrod;
-  height: 100%;
+  background-color:white;
+  height: 95%;
 }
 
-#section_1{
-  background-color: antiquewhite
+.divquote{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.scroll{
+  display: flex;
+  justify-content: center;
+
+
 }
 
 /* Centering a div horizontically */
 .quotes{
-  width: 100%;
+  font-family:'Libre Baskerville', serif;
+  font-size: 7vw;
+  line-height: 16vw;
+  width: 80%;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
   margin-bottom: 50px;
 }
 
+
+
+#section_2{
+  background-color: blueviolet;
+  display: flex;
+}
 
 #section_2 >div >div >img{
   height: 300px;
@@ -287,30 +303,42 @@ section {
 }
 
 #section_4 > button{
-  background-color: bisque
+  background-color: bisque;
+  display: flex;
+  margin: auto;
 }
 
 #section_5{
   background-color: greenyellow;
+  display: none;
 }
 
-#section_5{
+#projects-grid{
   display: grid;
   grid-template-columns: 150px 150px;
   grid-template-rows: 150px 300px 75px;
   grid-gap: 25px;
+  justify-content: center;
+  align-content: center;
 }
 
-#section_5> div{
+#projects-grid> div{
   background-color: aqua;
   padding: 25px;
 }
 
-.section_5> div:last-of-type{
-  grid-column: 1/2;
+#projects-grid> div:last-of-type{
+  grid-column: 1/3;
 }
 
-#projects_young{
+.projects-container{
+  position: relative;
+  bottom: 580px;
+  z-index: 0;
+}
+
+.projects-big{
+  display: none;
   height: 600px;
   width: 300px;
   background-color: brown;
@@ -318,13 +346,14 @@ section {
   text-align: center;
 }
 
-#projects_young>img{
+.projects-big>img{
   height: 200px;
 }
 
 #close{
   width:50px;
   display: relative;
+  margin-top: 20px;
 }
 
 
@@ -350,6 +379,8 @@ section {
     grid-template-columns: 100px 100px 100px;
     grid-template-rows: 100px 100px 100px;
     grid-gap: 25px;
+    align-content: center;
+    justify-content: center;
   }
 
   .interets >div{
@@ -390,3 +421,4 @@ section {
     height: 50%;
     background-color: aqua;
   }
+
