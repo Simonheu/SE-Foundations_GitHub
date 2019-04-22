@@ -367,6 +367,9 @@ section {
   overflow-x: auto;
   width: 100%;
 }
+#section_4 > div.capturescroll {
+  height: 100%
+}
   #section_7 > div >div{
     flex: 0 0 auto;
     width: 100%;

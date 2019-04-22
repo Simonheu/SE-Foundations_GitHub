@@ -8,13 +8,13 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="static/stylesheet.css">
-    <script src="static/myscripts.js"></script>
     <!-- NavLogo <div>Icons made by <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
     <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/robin-kylander" title="Robin Kylander">Robin Kylander</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
     <!-- Mouse Wheel Plugin -->
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
     <script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
+    <script src="js/myscripts.js"></script>
 </head>
 
 <body>
@@ -76,58 +76,61 @@
         </div>
     </section>
     <section id="section_4">
-        <div>
-            <p>This question was one of the core questions I liked to asked, when I was young.  Especially my father was very good in explaining most of the things I wanted to know. I remember that he would talk for hours   during long car drives or walks in nature, where I would listen with curiosity. </p>
+        <div class="capturescroll">
+
+                <div>
+                        <p>This question was one of the core questions I liked to asked, when I was young.  Especially my father was very good in explaining most of the things I wanted to know. I remember that he would talk for hours   during long car drives or walks in nature, where I would listen with curiosity. </p>
+                    </div>
+                        <button  onclick="togglediv('section_5')"id="project-button">Click me, to see the projects</button>
+                
+                    <section id="section_5">
+                        <div id="projects-grid">
+                            <div  onclick="togglediv('fingerboard-big')" class="project" id="fingerboard-small">
+                                <p>Fingerboard</p>
+                            </div>
+                            <div onclick="togglediv('notebook-big')"class="project">
+                                <p>Ideas Notebook</p>
+                            </div>
+                            <div onclick="togglediv('os-big')" class="project">
+                                <p>Gesture Based Mobile OS</p>
+                            </div>
+                        </div>
+                        <div class="projects-container">
+                            <div class="projects-big" id="fingerboard-big">
+                                <h1>Fingerboard</h1>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                                <img src="static/img/simon.jpg">
+                                <div onclick="togglediv('fingerboard-big')">
+                                    <img id="close" src="static/img/close.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects-container">
+                            <div class="projects-big"  id="notebook-big">
+                                <h1>Ideas Notebook</h1>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                                <img src="static/img/simon.jpg">
+                                <div onclick="togglediv('notebook-big')">
+                                    <img id="close" src="static/img/close.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects-container">
+                            <div class="projects-big" id="os-big">
+                                <h1>Gesture Based OS</h1>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                                <img src="static/img/simon.jpg">
+                                <div onclick="togglediv('os-big')">
+                                    <img id="close" src="static/img/close.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
         </div>
-            <button  onclick="togglediv('section_5')"id="project-button">Click me, to see the projects</button>
-    
-        <section id="section_5">
-            <div id="projects-grid">
-                <div  onclick="togglediv('fingerboard-big')" class="project" id="fingerboard-small">
-                    <p>Fingerboard</p>
-                </div>
-                <div onclick="togglediv('notebook-big')"class="project">
-                    <p>Ideas Notebook</p>
-                </div>
-                <div onclick="togglediv('os-big')" class="project">
-                    <p>Gesture Based Mobile OS</p>
-                </div>
-            </div>
-            <div class="projects-container">
-                <div class="projects-big" id="fingerboard-big">
-                    <h1>Fingerboard</h1>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                    <img src="static/img/simon.jpg">
-                    <div onclick="togglediv('fingerboard-big')">
-                        <img id="close" src="static/img/close.svg">
-                    </div>
-                </div>
-            </div>
-            <div class="projects-container">
-                <div class="projects-big"  id="notebook-big">
-                    <h1>Ideas Notebook</h1>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                    <img src="static/img/simon.jpg">
-                    <div onclick="togglediv('notebook-big')">
-                        <img id="close" src="static/img/close.svg">
-                    </div>
-                </div>
-            </div>
-            <div class="projects-container">
-                <div class="projects-big" id="os-big">
-                    <h1>Gesture Based OS</h1>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                    <img src="static/img/simon.jpg">
-                    <div onclick="togglediv('os-big')">
-                        <img id="close" src="static/img/close.svg">
-                    </div>
-                </div>
-            </div>
-        </section>
     </section>
     
     <section id="section_7">
-        <div id="mousescroll">
+        <div class="capturescroll" id="horizontalscroll">
             <div>
                 <div>
                     <p>During this time, I started several hobbies, some of which I still do today. </p>
@@ -163,10 +166,10 @@
         </div>
     </section>
     <section id="section_8">
-        <div>
+        <div class="capturescroll">
             <p>I grew up and got interested in many other things. Click on the piles below, to reveal some of my interets</p>
         </div>
-        <div class="interets">
+        <div class="interets capturescroll">
             <div>#1</div>
             <div>#2</div>
             <div>#3</div>
