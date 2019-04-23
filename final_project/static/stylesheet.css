@@ -3,7 +3,7 @@ body {
   height: 100%;
 }
 
-p{
+.p{
   font-family: Avenir;
   font-style: normal;
   font-weight: 300;
@@ -22,10 +22,10 @@ p{
 
 .centercontainer{
   text-align: center;
+  display: flex;
 }
 
 .centerinner{
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -337,29 +337,49 @@ section {
   align-content: center;
 }
 
-#section_4 > button{
-  background-color: bisque;
-  display: flex;
-  margin: auto;
+#section_4{
+  height: 100%;
+}
+
+#button_div{
+  text-align: center;
+}
+
+#project_button{
+  margin: 0 auto;
+  padding: 20 20 20 20px;
+  background-color:#545454;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 10px;
+  color: #C3BFBF;
+  margin-top: 20px;
 }
 
 #section_5{
-  background-color: greenyellow;
   display: none;
+  position: relative;
+  top: -600;
+  height: 530px;
+  background-color:none;
 }
 
 #projects-grid{
   display: grid;
   grid-template-columns: 150px 150px;
-  grid-template-rows: 150px 300px 75px;
+  grid-template-rows: 150px 300px;
   grid-gap: 25px;
   justify-content: center;
   align-content: center;
+  position: relative;
+  top: 25px;
 }
 
 #projects-grid> div{
-  background-color: aqua;
+  background-color: #545454;
   padding: 25px;
+  border-radius: 10px;
 }
 
 #projects-grid> div:last-of-type{
@@ -368,27 +388,49 @@ section {
 
 .projects-container{
   position: relative;
-  bottom: 580px;
+  bottom: 495px;
   z-index: 0;
 }
 
 .projects-big{
   display: none;
-  height: 600px;
-  width: 300px;
-  background-color: brown;
+  height: 605px;
+  width: 325px;
+  background-color:#759A98;
   margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.projects_content_wrap{
+  overflow: auto;
+  height: 485px;
+}
+
+.projects_content_wrap >p{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.projects_img{
+  height: 200px;
+}
+
+.projects_grid_caption{
+  color: #C3BFBF;
+  font-family:'Libre Baskerville', serif;
+  font-size: 15px;;
   text-align: center;
 }
 
-.projects-big>img{
-  height: 200px;
+.projects_caption{
+  padding: 10 10 10px;
 }
 
 #close{
   width:50px;
   display: relative;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 
@@ -402,6 +444,14 @@ section {
   overflow-x: auto;
   width: 100%;
 }
+
+.hobby_caption{
+  color:#767676;
+  font-family:'Libre Baskerville', serif;
+  font-size: 30px;;
+  text-align: center;
+}
+
 #section_4 > div.capturescroll {
   height: 100%
 }

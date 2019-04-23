@@ -29,7 +29,7 @@ function togglediv(t){
 
 $(function() {
     $('.capturescroll').mousewheel(function(event, delta) { //mousewhweel is an eventhandler //event is the default event (scrolling up/down// delta is the mouse up or down scroll
-        const speed = 3
+        const speed = 1
         const mousescroll = $('#horizontalscroll')
         const scrollable = mousescroll[0] //jquery array
         const scrollTopPosition = mousescroll.offset().top //position of horizontal scroll component
