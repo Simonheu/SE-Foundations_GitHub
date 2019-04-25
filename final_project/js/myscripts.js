@@ -17,8 +17,8 @@ function colorChange(x){
 }
 
 // Hide and Show Projects
-function togglediv(t){
-    var x = document.getElementById(t);
+function togglediv(x){
+    var x = document.getElementById(x);
     if (x.style.display === "none"){
         x.style.display = "block";
 
@@ -27,6 +27,7 @@ function togglediv(t){
     }
 }
 
+// Mousescroll /slide left function
 $(function() {
     $('.capturescroll').mousewheel(function(event, delta) { //mousewhweel is an eventhandler //event is the default event (scrolling up/down// delta is the mouse up or down scroll
         const speed = 1
@@ -45,21 +46,36 @@ $(function() {
     });
  });
 
-// Mouse Wheel Function from https://codepen.io/chriscoyier/pen/WmyKWO
-// $(document).ready(function() {
-//     $('mousescroll').mousewheel(function(e, delta) {
-//     this.scrollLeft -= (delta);
-//     e.preventDefault();
-//     });
-// });
+// Toggle Interests and change color
+function swaptext(div) {
+    var interests = [
+        "Entrepreurship",
+        "Design",
+        "UI & UX",
+        "Architecture",
+        "Quality Products",
+        "Business & Economics",
+        "Self-Development",
+        "Philosphy",
+    ];
+    var x = document.getElementById(div);
+    var index = x.getAttribute("interestId");
+    console.log(index);
+    if (x.innerHTML === "Click me!") {
+      x.innerHTML = interests[index];
+      x.style.color = "#545454";
+      x.style.backgroundColor = "#C3BFBF";
+    } else {
+      x.innerHTML = "Click me!";
+      x.style.color = "#C3BFBF";
+      x.style.backgroundColor = "#545454";
+    }
+}
 
-// document.getElementById("mousescroll").onscroll = function() {mouseWheel()};
-
-// function mouseWheel() {
-//   document.getElementById("demo").innerHTML = "You scrolled in div.";
-// }
-
-// document.getElementById("mousescroll").addEventListener("wheel", myFunction);
-
-// function myFunction() {
-//   this.style.fontSize = "35px";
+// Down Arrow //adopted from https://codepen.io/nxworld/pen/OyRrGy
+$(function() {
+    $('a.arrow-down').click(function(e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+    });
+  });

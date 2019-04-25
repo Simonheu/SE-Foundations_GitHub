@@ -7,11 +7,11 @@ body {
   font-family: Avenir;
   font-style: normal;
   font-weight: 300;
-  font-size: 7vw;
+  font-size: 1.7em;
   line-height: 130%;
   color: #767676;
-  margin-right: 15%;
-  margin-left: 15%;
+  margin-right: 2em;
+  margin-left: 2em;
   text-align: left;
 }
 
@@ -30,9 +30,12 @@ body {
   justify-content: center;
 }
 
+/* Responsive Navbar CSS Start*/
+
+/* mobile navigation bar */
 @media(max-width: 639px) {
 
-  /* mobile navigation bar */
+  
   #nav {
     z-index: 10;
     display: flex;
@@ -273,6 +276,9 @@ body {
   }
 }
 
+/* Responsive Navbar CSS END*/
+
+
  /* Nav Menu Animation */
 .overlay.open {
   width: 100%;
@@ -283,8 +289,27 @@ body {
   background-color: white;
 }
 
+/* Responsive Styles for General Content */
+
+@media(min-width: 640px) {
+  #content{
+    /* margin-left: 300px;
+    margin-right: 100px; */
+    /* height: 100%;
+    width: 100%; */
+  }
+
+  .p{
+    margin-left: 250px;
+    margin-right: 100px;
+  }
+  #divquote{
+    margin-left: 200px;
+  }
+}
+
 section {
-  background-color:white;
+  background-color: white;
   height: 95%;
 }
 
@@ -303,8 +328,8 @@ section {
 /* Centering a div horizontically */
 .quotes{
   font-family:'Libre Baskerville', serif;
-  font-size: 7vw;
-  line-height: 16vw;
+  font-size: 1.6em;
+  line-height: 2.5em;
   width: 80%;
   text-align: center;
   color: #767676;
@@ -434,7 +459,7 @@ section {
 }
 
 
-#imghobby{
+.imghobby{
   width: 150px;
 }
 
@@ -461,10 +486,13 @@ section {
     height:100%;
     text-align: center;
   }
+#section_8{
+  height: 110%;
+}
 
   .interets{
     display: grid;
-    grid-template-columns: 100px 100px 100px;
+    grid-template-columns: 120px 120px ;
     grid-template-rows: 100px 100px 100px;
     grid-gap: 25px;
     align-content: center;
@@ -472,8 +500,20 @@ section {
   }
 
   .interets >div{
-    background-color: aqua;
+    background-color:#545454;
     padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: #C3BFBF;
+}
+
+#seciton_9{
+  height:200%;
+}
+
+.backpackpics{
+  height: 200px;
+  margin: 0 auto;
 }
 
 #section_11{
@@ -507,6 +547,48 @@ section {
 
   #section_15{
     height: 50%;
-    background-color: aqua;
   }
 
+  /* Down arrow adopted from https://codepen.io/nxworld/pen/OyRrGy */
+  
+  #arrow_id{
+    margin-top: -50px;
+  }
+  
+  .arrow-down {
+    position: absolute;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #545454;
+    border-bottom: 1px solid #545454;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb04 2s infinite;
+    animation: sdb04 2s infinite;
+    box-sizing: border-box;
+  }
+  @-webkit-keyframes sdb04 {
+    0% {
+      -webkit-transform: rotate(-45deg) translate(0, 0);
+    }
+    20% {
+      -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+    }
+    40% {
+      -webkit-transform: rotate(-45deg) translate(0, 0);
+    }
+  }
+  @keyframes sdb04 {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+    }
+    20% {
+      transform: rotate(-45deg) translate(-10px, 10px);
+    }
+    40% {
+      transform: rotate(-45deg) translate(0, 0);
+    }
+  }
+  
