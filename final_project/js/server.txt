@@ -1,0 +1,32 @@
+server {
+      listen 443 http2 default_server;
+      listen [::]:443 http2 default_server;
+    	listen 0.0.0.0:80;
+      server_name jgefroh.com www.jgefroh.com;
+      rewrite ^ https://$host$request_uri? permanent;
+    
+      root /var/www/jgefroh.com;
+      index index.html;
+      server_name jgefroh.com www.jgefroh.com;
+      location / {
+        try_files $uri $uri/ =404;
+      }
+    
+    	ssl on;
+        ssl_certificate /etc/letsencrypt/live/jgefroh.com/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/jgefroh.com/privkey.pem;
+    
+    #gzip compression
+    	gzip on;
+    	gzip_types application/javascript image/* text/css;
+    	gunzip on;
+    
+    #client side caching
+    	location ~* \.(jpg|jpeg|png|gif|ico)$ {
+           expires 30d;
+        }
+        location ~* \.(css|js)$ {
+           expires 7d;
+        }
+    
+    }
