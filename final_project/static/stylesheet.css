@@ -80,10 +80,9 @@ body {
   /* Position the content inside the overlay */
   .overlay-content {
     position: relative;
-    top: 25%;
+    top: 15%;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
     vertical-align: middle !important;
   }
 
@@ -101,6 +100,46 @@ body {
   .overlay a:hover,
   .overlay a:focus {
     color: #f1f1f1;
+  }
+
+  /* Social Media */
+
+  #social-media{
+    position: relative;
+    bottom: 30px;
+    display: block;
+  }
+
+  .text-social{ 
+    display: none !important;
+  }
+
+  .img-social{
+    height: 47px;
+    color: #C3BFBF;
+    position: relative;
+    top: 20;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .div-social{
+    display: flex;
+    justify-content: center;
+    margin:0 !important;
+  }
+
+
+  #heading-social{
+    display: inline-block;
+    align-content: left;
+    font-style: normal ;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 37px;
+    align-items: center;
+    color: #C3BFBF;
+    margin:0;
   }
 
   @media screen and (max-height: 450px) {
@@ -195,15 +234,17 @@ body {
     background-color: #545454;
     overflow-y: hidden;
     transition: 0.5s;
+    display: flex;
   }
 
   /* Position the content inside the overlay */
   .overlay-content {
     position: relative;
-    top: 15%;
+    top: 5%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
+    text-align: center;
   }
 
   /* The navigation links inside the overlay */
@@ -236,6 +277,49 @@ body {
       top: 15px;
       right: 35px;
     }
+  }
+
+  /* social media links */
+  #social-media{
+    position: relative;
+    bottom: 30px;
+  }
+
+  .text-social{ 
+    font-size: 10px !important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 36px !important;
+    line-height: 37px !important;
+    display: flex !important;
+    align-items: left !important;
+    color: #C3BFBF !important;
+    padding: 15px !important;
+  }
+
+  .img-social{
+    height: 24px;
+    color: #C3BFBF;
+    position: relative;
+    top: 20;
+  }
+
+  .div-social{
+    display: block;
+  }
+  .div-social >div{
+    display: flex;
+  }
+
+  #heading-social{
+    align-content: left;
+    font-style: normal ;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 37px;
+    display: flex;
+    align-items: left;
+    color: #C3BFBF;
   }
 
   /* Menu Burger Animation adopted from FreeCodeCamp: https://www.w3schools.com/howto/howto_css_menu_icon.asp */
